@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+* {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  font-variant-ligatures: none !important;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+}
