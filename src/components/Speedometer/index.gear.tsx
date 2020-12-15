@@ -28,35 +28,6 @@ const Value = styled.div`
   color: #bfbfbf;
 `;
 
-const styles = {
-  wrapper: {
-    position: 'absolute',
-    left: '75%',
-    top: '50%',
-    transform: 'translate(-50%, -100%)',
-    zIndex: 100
-  } as React.CSSProperties,
-
-  container: {
-    width: '1.5vh',
-    height: '1.5vh',
-    padding: '.5vh',
-    background: 'radial-gradient(circle, transparent 20%, rgb(4, 4, 7) 20%, rgb(4, 4, 7) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, rgb(4, 4, 7) 20%, rgb(4, 4, 7) 80%, transparent 80%, transparent) 12px 12px, linear-gradient(rgb(64, 64, 67) 2px, transparent 2px) 0 -1px, linear-gradient(90deg, rgb(64, 64, 67) 2px, transparent 2px) -1px 0',
-    backgroundColor: 'rgb(4, 4, 7)',
-    backgroundSize: '75px 75px, 75px 75px, 12px 12px, 12px 12px',
-    border: '1px solid rgba(191, 191, 161, .5)',
-    clipPath: 'polygon(5px 0, 100% 0, 100% calc(100% - 5px), calc(100% - 5px) 100%, 0 100%, 0 5px)'
-  } as React.CSSProperties,
-
-  gear: {
-    fontSize: '3vh',
-    fontFamily: 'Dark Ministry',
-    fontWeight: 400,
-    lineHeight: '1.8vh',
-    textAlign: 'center'
-  } as React.CSSProperties
-}
-
 const Gear = () => {
   const data = useRecoilValue(gearState)
   var formattedGear;
